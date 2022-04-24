@@ -20,9 +20,10 @@ class SolrResultActionSlot
             $searchResultSet = $values['resultSet'];
             $currentPage = $values['currentPage'];
             $itemsPerPage = ($searchResultSet->getUsedResultsPerPage() ?: 10);
-            $paginator = GeneralUtility::makeInstance(ResultsPaginator::class, $searchResultSet, $currentPage, $itemsPerPage);
+            $maximumNumberOfLinks = ($values['pagination']->getMaxPageNumbers() ?: 10);
+	    $paginator = GeneralUtility::makeInstance(ResultsPaginator::class, $searchResultSet, $currentPage, $itemsPerPage);
 
-            $values['pagination'] = GeneralUtility::makeInstance(NumberedPagination::class, $paginator, 10);
+            $values['pagination'] = GeneralUtility::makeInstance(NumberedPagination::class, $paginator, $maximumNumberOfLinks);
         }
         return [$values];
     }
