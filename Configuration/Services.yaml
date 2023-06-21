@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: false
+    autoconfigure: true
+
+  StudioMitte\SolrNumberedPagination\:
+    resource: '../Classes/*'
+
+  StudioMitte\SolrNumberedPagination\EventListener\BeforeSearchResultIsShownEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'solr_numbered_pagination/pagination'
+        event: ApacheSolrForTypo3\Solr\Event\Search\BeforeSearchResultIsShownEvent
