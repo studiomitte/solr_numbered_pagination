@@ -13,7 +13,7 @@
   ],
   "require": {
     "typo3/cms-core": "^10 || ^11.5 || ^12.4.2",
-    "georgringer/numbered-pagination": "^1",
+    "georgringer/numbered-pagination": "^1 || ^2",
     "apache-solr-for-typo3/solr": "11.5.x-dev || ^11 || ^12"
   },
   "autoload": {
