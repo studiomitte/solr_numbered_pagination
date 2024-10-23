@@ -12,9 +12,9 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^10 || ^11.5 || ^12.4.2",
+    "typo3/cms-core": "^10 || ^11.5 || ^12.4.2 || ^13.4",
     "georgringer/numbered-pagination": "^1 || ^2",
-    "apache-solr-for-typo3/solr": "11.5.x-dev || ^11 || ^12"
+    "apache-solr-for-typo3/solr": "11.5.x-dev || ^11 || ^12 || ^13 || 13.0.x-dev"
   },
   "autoload": {
     "psr-4": {
