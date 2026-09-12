@@ -7,12 +7,12 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Georg Ringer',
     'author_email' => 'gr@studiomitte.com',
     'state' => 'stable',
-    'version' => '1.0.4',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-12.4.99',
-            'solr' => '11.5.0-12.99.99',
-            'numbered_pagination' => '1.0.0-1.99.99',
+            'typo3' => '10.4.0-14.99.99',
+            'solr' => '11.5.0-14.99.99',
+            'numbered_pagination' => '1.0.0-2.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],
